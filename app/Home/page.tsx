@@ -320,65 +320,64 @@ export default function HomePage(){
 
             {/* Content 7*/}
 
-            <div className="flex flex-col bg-amber-950/70 w-full h-105 px-10 py-2">
-                <div className="flex flex-row w-full mt-30">
-                    <div className="flex flex-col gap-5 ms-20">
-                         <p className="text-2xl text-white font-bold">
-                            BrewNest</p>
-                        <p className="text-gray-100/70">
-                            Serving handcrafted coffee, delicious
-                            <br />
-                             bites and cozy moments every day.
-                        </p>
-                    </div>
-                     <div className="flex flex-col gap-5 ms-30">
-                         <p className="text-lg text-amber-200 font-bold">
-                           Opening Hours</p>
-                        <p className="text-gray-100 leading-relaxed">
-                            Mon - Fri: 9:00 AM - 8:00 PM
-                            <br />
-                            <br />
-                            Sat && Sun: 9:00 AM - 5:00 PM
-                        </p>
-                    </div>
-                     <div className="flex flex-col gap-5 ms-10">
-                         <p className="text-lg text-amber-200 font-bold">
-                           Contact Us</p>
-                        <p className="text-gray-100 leading-relaxed ">
-                            Example@gmail.com
-                            <br />
-                            <br />
-                            +63 123 4567 890
-                            <br />
-                            <br />
-                            153 Coffee Street, Mexico
-                        </p>
-                    </div>
-                </div>
-                
-              <div className="border-t border-t-gray-100 mt-5 py-8 flex items-center justify-between">
+            {/* Footer */}
+<footer className="bg-amber-950 w-full px-20 py-16">
     
-                <p className="text-white font-semibold ">
-                    Follow us
-                </p>
+    {/* Top Section */}
+    <div className="flex flex-row justify-between items-start w-full border-b border-amber-800/60 pb-12">
+        
+        {/* Brand */}
+        <div className="flex flex-col gap-4 max-w-xs">
+            <p className="text-2xl text-white font-extrabold tracking-wide">BrewNest</p>
+            <p className="text-amber-200/60 text-sm leading-relaxed">
+                Serving handcrafted coffee, delicious bites, and cozy moments every day.
+            </p>
+        </div>
 
-                <div className="flex items-center gap-4 text-white ">
-                    <a href="#" className="hover:text-pink-500 transition">
-                        <FaInstagram size={20} />
-                    </a>
-
-                    <a href="#" className="hover:text-blue-600 transition">
-                        <FaFacebook size={20} />
-                    </a>
-
-                    <a href="#" className="hover:text-sky-500 transition">
-                        <FaTwitter size={20} />
-                    </a>
+        {/* Opening Hours */}
+        <div className="flex flex-col gap-4">
+            <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Opening Hours</p>
+            <div className="flex flex-col gap-2 text-sm text-amber-100/70">
+                <div className="flex justify-between gap-10">
+                    <span>Mon – Fri</span>
+                    <span className="text-white font-medium">9:00 AM – 8:00 PM</span>
                 </div>
-
+                <div className="flex justify-between gap-10">
+                    <span>Sat & Sun</span>
+                    <span className="text-white font-medium">9:00 AM – 5:00 PM</span>
                 </div>
-                
             </div>
+        </div>
+
+        {/* Contact */}
+        <div className="flex flex-col gap-4">
+            <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Contact Us</p>
+            <div className="flex flex-col gap-2 text-sm text-amber-100/70 leading-relaxed">
+                <span>example@gmail.com</span>
+                <span>+63 123 4567 890</span>
+                <span>153 Coffee Street, Mexico</span>
+            </div>
+        </div>
+
+    </div>
+
+    {/* Bottom Bar */}
+    <div className="flex items-center justify-between pt-6">
+        <p className="text-xs text-amber-200/40">© 2025 BrewNest. All rights reserved.</p>
+        <div className="flex items-center gap-4 text-amber-200/60">
+            <a href="#" className="hover:text-white transition-colors duration-200">
+                <FaInstagram size={17} />
+            </a>
+            <a href="#" className="hover:text-white transition-colors duration-200">
+                <FaFacebook size={17} />
+            </a>
+            <a href="#" className="hover:text-white transition-colors duration-200">
+                <FaTwitter size={17} />
+            </a>
+        </div>
+    </div>
+
+</footer>
             
 
             {/* Content 7*/}

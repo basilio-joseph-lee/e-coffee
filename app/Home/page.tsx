@@ -1,3 +1,5 @@
+"use client"
+
 import { IoMdHome } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
@@ -5,27 +7,32 @@ import FeatureCard from "../components/FeatureCard";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 export default function HomePage(){
 
+
+
     return (
+
+
         <>
             <div className="bg-gradient-to-t text-white from-amber-800/80 to-amber-900/80 h-screen w-full p-7">
                 {/* Header */}
                 <div className="flex flex-row justify-evenly items-center">
                     <p className="text-2xl font-bold">BrewNest</p>
                     <div className="flex flex-row gap-5 font-semibold text-sm">
-                        <span><a href="">Home</a></span>
-                        <span><a href="">About</a></span>
-                        <span><a href="">Menu</a></span>
-                        <span><a href="">Speciality</a></span>
-                        <span><a href="">Gallery</a></span>
-                        <span><a href="">Contact</a></span>
+                        <span><a href="#home">Home</a></span>
+                        <span><a href="#About">About</a></span>
+                        <span><a href="#Menu">Menu</a></span>
+                        <span><a href="#Gallery">Gallery</a></span>
+                        <span><a href="#Contact">Contact</a></span>
                     </div>
-                    <button className="bg-gray-300/30 border border-gray-400 px-4 py-2 rounded-xl text-[12px] font-semibold">
-                        Order Now
-                    </button>
+                    <a href="./Order">
+                        <button className="bg-gray-300/30 border border-gray-400 px-4 py-2 rounded-xl text-[12px] font-semibold">
+                            Order Now
+                        </button>
+                    </a>
                 </div>
                 {/* Header */}
                 {/* Content */}
-                <div className="flex flex-1 flex-row ps-18 ">
+                <div className="flex flex-1 flex-row ps-18 " id="home">
                     <div className="flex flex-[.80] flex-col justify-center p-7 gap-5 h-[88vh]">
                         <p className="text-5xl font-bold">
                             Freshly Brewed
@@ -115,7 +122,7 @@ export default function HomePage(){
 
             {/* Content 3*/}
 
-            <div className="flex flex-col justify-center items-center p-20 gap-3">
+            <div className="flex flex-col justify-center items-center p-20 gap-3" >
                 <p className="text-amber-950 text-4xl font-extrabold">Crafted Coffee Selections</p>
                 <p className="text-gray-600/80 text-[13px]">From strong espresso shots to smooth creamy blends, explore coffee choices made for every taste</p>
            
@@ -148,7 +155,7 @@ export default function HomePage(){
 
             {/* Content 4*/}
 
-            <div className="bg-amber-950/20 h-[100vh] p-20">
+            <div className="bg-amber-950/20 h-[100vh] p-20" id="About">
 
                 <div className=" flex flex-1 justify-center flex-row gap-5">
                     <div className="flex flex-col  justify-center flex-[.5] gap-5  w-screen h-[70vh]">
@@ -187,7 +194,7 @@ export default function HomePage(){
             {/* Content 4*/}
 
             {/* Content 5*/}
-           <div className="flex flex-col items-center py-15 px-15">
+           <div className="flex flex-col items-center py-15 px-15" id="Menu">
 
                 {/* Header */}
                 <p className="text-amber-950/20 font-bold tracking-[2px]">
@@ -298,7 +305,7 @@ export default function HomePage(){
             {/* Content 5*/}
 
              {/* Content 6*/}
-            <div className="flex items-center justify-center bg-amber-950/10 w-full h-95">
+            <div className="flex items-center justify-center bg-amber-950/10 w-full h-95" id="Gallery">
 
                 <div className="flex flex-row gap-5 items-center">
                     <img 
@@ -321,63 +328,63 @@ export default function HomePage(){
             {/* Content 7*/}
 
             {/* Footer */}
-<footer className="bg-amber-950 w-full px-20 py-16">
-    
-    {/* Top Section */}
-    <div className="flex flex-row justify-between items-start w-full border-b border-amber-800/60 pb-12">
-        
-        {/* Brand */}
-        <div className="flex flex-col gap-4 max-w-xs">
-            <p className="text-2xl text-white font-extrabold tracking-wide">BrewNest</p>
-            <p className="text-amber-200/60 text-sm leading-relaxed">
-                Serving handcrafted coffee, delicious bites, and cozy moments every day.
-            </p>
-        </div>
+            <footer className="bg-amber-950 w-full px-20 py-16" id="Contact">
+                
+                {/* Top Section */}
+                <div className="flex flex-row justify-between items-start w-full border-b border-amber-800/60 pb-12">
+                    
+                    {/* Brand */}
+                    <div className="flex flex-col gap-4 max-w-xs">
+                        <p className="text-2xl text-white font-extrabold tracking-wide">BrewNest</p>
+                        <p className="text-amber-200/60 text-sm leading-relaxed">
+                            Serving handcrafted coffee, delicious bites, and cozy moments every day.
+                        </p>
+                    </div>
 
-        {/* Opening Hours */}
-        <div className="flex flex-col gap-4">
-            <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Opening Hours</p>
-            <div className="flex flex-col gap-2 text-sm text-amber-100/70">
-                <div className="flex justify-between gap-10">
-                    <span>Mon – Fri</span>
-                    <span className="text-white font-medium">9:00 AM – 8:00 PM</span>
+                    {/* Opening Hours */}
+                    <div className="flex flex-col gap-4">
+                        <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Opening Hours</p>
+                        <div className="flex flex-col gap-2 text-sm text-amber-100/70">
+                            <div className="flex justify-between gap-10">
+                                <span>Mon – Fri</span>
+                                <span className="text-white font-medium">9:00 AM – 8:00 PM</span>
+                            </div>
+                            <div className="flex justify-between gap-10">
+                                <span>Sat & Sun</span>
+                                <span className="text-white font-medium">9:00 AM – 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Contact */}
+                    <div className="flex flex-col gap-4">
+                        <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Contact Us</p>
+                        <div className="flex flex-col gap-2 text-sm text-amber-100/70 leading-relaxed">
+                            <span>example@gmail.com</span>
+                            <span>+63 123 4567 890</span>
+                            <span>153 Coffee Street, Mexico</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div className="flex justify-between gap-10">
-                    <span>Sat & Sun</span>
-                    <span className="text-white font-medium">9:00 AM – 5:00 PM</span>
+
+                {/* Bottom Bar */}
+                <div className="flex items-center justify-between pt-6">
+                    <p className="text-xs text-amber-200/40">© 2025 BrewNest. All rights reserved.</p>
+                    <div className="flex items-center gap-4 text-amber-200/60">
+                        <a href="#" className="hover:text-white transition-colors duration-200">
+                            <FaInstagram size={17} />
+                        </a>
+                        <a href="#" className="hover:text-white transition-colors duration-200">
+                            <FaFacebook size={17} />
+                        </a>
+                        <a href="#" className="hover:text-white transition-colors duration-200">
+                            <FaTwitter size={17} />
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        {/* Contact */}
-        <div className="flex flex-col gap-4">
-            <p className="text-amber-300 font-bold text-sm uppercase tracking-widest">Contact Us</p>
-            <div className="flex flex-col gap-2 text-sm text-amber-100/70 leading-relaxed">
-                <span>example@gmail.com</span>
-                <span>+63 123 4567 890</span>
-                <span>153 Coffee Street, Mexico</span>
-            </div>
-        </div>
-
-    </div>
-
-    {/* Bottom Bar */}
-    <div className="flex items-center justify-between pt-6">
-        <p className="text-xs text-amber-200/40">© 2025 BrewNest. All rights reserved.</p>
-        <div className="flex items-center gap-4 text-amber-200/60">
-            <a href="#" className="hover:text-white transition-colors duration-200">
-                <FaInstagram size={17} />
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-200">
-                <FaFacebook size={17} />
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-200">
-                <FaTwitter size={17} />
-            </a>
-        </div>
-    </div>
-
-</footer>
+            </footer>
             
 
             {/* Content 7*/}
